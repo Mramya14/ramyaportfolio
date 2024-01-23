@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+    <link rel="stylesheet" href="contactus.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+<script src="contactus.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("eeWf1teeGAc-qOXDP");
+   })();
+</script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="menu_bar">
+            <nav>
+                <h1><span>R</span>amya.</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li onclick="aboutme"><a href="#aboutme">About</a></li>
+                    <li onclick="projects"><a href="#projects">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li onclick="container-contact"><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_text">
+            <p>UI Fullstack Developer</p>
+            <h1>Hi i'm <span>Ramya</span><br>From Hyderabad</h1>
+            <img src="https://static.toiimg.com/photo/103492611.cms">
+        </div>
+    </div>
+    <div id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="https://imagesvs.oneindia.com/images/1/17733204/17733204-960_anushka-shetty_p.jpg">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Secure a responsible career opportunity to fully utilize my training and skills,<br>
+                        while making a significant contribution to the success of the company.</p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab_links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>UI-Developer</span></br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, WORDPRESS</li>
+                            <li><span>Tools</span> </br>Photoshop, MS-Office, CORE JAVA.</li>
+                            <li><span>Operating Systems: </span></br>Windows family</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="Projects">
+                        <ul>
+                            <li><span>School website </span></br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, WORDPRESS</li>
+                            <li><span>Calculator</span> </br>Photoshop, MS-Office, CORE JAVA.</li>
+                            <li><span>Operating Systems: </span></br>Windows family</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="Education">
+                        <ul>
+                            <li><span>B.Tech</span></br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, WORDPRESS</li>
+                            <li><span>Diploma</span> </br>Photoshop, MS-Office, CORE JAVA.</li>
+                            <li><span>SSC </span></br>Windows family</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio----------->
+    <div class="portfolio" id="projects">
+        <div class="container">
+            <h1 class="sub_title">My Projects</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="https://5.imimg.com/data5/MH/FQ/OV/SELLER-52007146/personal-portfolio-website.jpg">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="calimg.PNG">
+                    <div class="layer">
+                        <h3>Caluculator</h3>
+                        <p>This is a decktop application</p>
+                    </div>
+                </div>
+                <div class="work">
+
+                    <img src="https://muffingroup.com/blog/wp-content/uploads/2021/08/beschoo.jpg">
+                    <div class="layer">
+                        <h3>School Website</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-contact">
+        <h2 class="contact-details">CONTACT DETAILS</h2>
+        <p>we would like to respond to your queries and
+             feel free to get touch with us</p>
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3 >Sent your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Ramya M" id="name">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+1 123 456 7891" id="phone">
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="enteremail@gmail.com" id="email">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="your Message" id="message"></textarea>
+                    <button type="button" onclick="sendmail()">Send</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>schoool1429@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 222 222 2222</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                        <td>Address</td>
+                        <td class="address-detail">Plot no:29, munganoor,
+                            torrur road, RR district,
+                            Hyderabad, 501505.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <footer id="footer">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li onclick="aboutme"><a href="#aboutme">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab_links")
+        var tabcontents = document.getElementsByClassName("tab_contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active_link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active_tab")
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
+    <script src="contactus.js"></script>
+</body>
+
+</html>

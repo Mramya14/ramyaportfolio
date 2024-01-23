@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+<script src="contactus.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("eeWf1teeGAc-qOXDP");
+   })();
+</script>
+</head>
+
+<body>
+    <div class="container-contact">
+        <h2 class="contact-details">CONTACT DETAILS</h2>
+        <p>we would like to respond to your queries and
+             feel free to get touch with us</p>
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3 >Sent your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Ramya M" id="name">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+1 123 456 7891" id="phone">
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="enteremail@gmail.com" id="email">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="your Message" id="message"></textarea>
+                    <button type="button" onclick="sendmail()">Send</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>schoool1429@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 222 222 2222</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                        <td>Address</td>
+                        <td class="address-detail">Plot no:29, munganoor,
+                            torrur road, RR district,
+                            Hyderabad, 501505.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
