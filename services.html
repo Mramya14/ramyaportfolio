@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RL Water Purifiers</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+        <script src="contactUs.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="top" class="container-fluid section-padding m-0 pt-1 topContainer">
+            <div class="container">
+                <div class="row pt-1 topContent">
+                    <div class="col-xl-4 col-sm-4 ps-5 contactNum">
+                        <i class="bi bi-telephone"></i>
+                        8074050609
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <i class="bi bi-envelope"></i>
+                        waterPurifier24@gmail.com
+                    </div>
+                    <div class="col-xl-4 col-sm-2 pe-5 d-flex justify-content-xl-end ">
+                        <div class="whatsappDiv">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mainContainer">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.JPG" alt="" class="logoImg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutUs.html">aboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="services.html">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="custmerReview.html">customer Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contactUs.htm">contact</a>
+                        </li>
+                        <button class="nav-item  btn btn-primary login">
+                            <a onclick="displayLoginDialogue()">Login</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid loginForm">
+            <div class="d-flex justify-content-center">
+                <div class="LoginContainer">
+                    <div class="text-center loginHeading">
+                        <strong>Login</strong>
+                    </div>
+                    <div class="d-flex justify-content-center formDiv">
+                        <form>
+                            <div>
+                                <input type="email" class="form-control" onkeypress="email(event)" placeholder="enter email"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div>
+                                <input type="password" class="form-control" placeholder="Password" onkeypress="password(event)"
+                                    onkeyup="validatekeyup(event)" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group validationlist">
+                                <div id="lenValidation" class="validate1">
+                                    <span id="showicon1"></span>
+                                    <span id="showicon2"></span>
+                                    Password should have 10 char
+                                </div>
+                                <div id="firstCharValidation" class="validate2">
+                                    <span id="showIconFirstChar1"></span>
+                                    <span id="showIconFirstChar2"></span>
+                                    Password should allways start with Uppercase char
+                                </div>
+                                <div class="validate3">
+                                    <span id="showIconOfDigits1"></span>
+                                    <span id="showIconOfDigits2"></span>
+                                    Password should have min one digit and max of 2 digits
+                                </div>
+                                <div class="validate4">
+                                    <span id="showIconOfSpecialSyb1"></span>
+                                    <span id="showIconOfSpecialSyb2"></span>
+                                    Should have one special symbol #, $, &, @
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" onclick="hideCheckContent()" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+        
+                            <div class="ipEmailError">
+                                Please enter Email
+                            </div>
+                            <div class="inputErrors">
+                                Please enter valid input
+                            </div>
+                            <div class="ipPasswordError">
+                                Please enter Password
+                            </div>
+                            <div class="checkbox">
+                                Please click checkbox
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="logmeErrors()" id="logme">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid serviceMainContainer">
+            <div class="container">
+                <div class="row m-2">
+                    <h2 class="mt-3 d-flex justify-content-center">
+                        RO Water Purifier Repair And Water Purifier Service in Hyderabad
+                    </h2>
+                    <div class="col-xl-6 servicePageImg">
+                        <img src="images/RorepairingImg.jpg" class="w-75" alt="">
+                    </div>
+                    <div class="col-xl-6 servicePageDetails">
+                        <p>
+                            Domestic RO water purifier service is essential in Hyderabad to guarantee that homes have access to safe
+                            and clean drinking water. These services, which address the numerous demands of city dwellers,
+                            usually involve the installation, repair of different kinds of water purifiers.
+                        </p>
+                        <p>
+                            We serve domestic water purifier services technicians who are experienced in dealing with issues such as
+                        </p>
+                        <ul>
+                            <li>RO Filter Replacement Programs</li>
+                            <li>RO Installation and Customization</li>
+                            <li>water purifier repair / RO repair</li>
+                            <li>water purifier service / RO service</li>
+                            <li>RO Repair Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid serviceContainer">
+            <div class="container  mt-3 services">
+                <div class="row service1">
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Installation Services
+                        </h3>
+                        <p>
+                            Installation services are provided by qualified service providers for a variety of water purification systems, such as RO (Reverse Osmosis), UV (Ultraviolet), and UF (Ultrafiltration) units. They make certain that plumbing lines are installed and connected correctly,
+                            following all applicable municipal laws and safety guidelines.
+                        </p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="images/kentRo.png" class="w-75" alt="">
+                    </div>
+                </div>
+                <div class="row service2">
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Maintenance and Servicing
+                        </h3>
+                        <p>
+                            It takes routine maintenance to keep water purifiers operating at their best. Periodic maintenance checks are provided by service providers, who examine filters, membranes, and other components for signs of wear and tear. 
+                            In order to maintain water quality and stop bacterial growth, they also clean and sterilize the purifier.
+                        </p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="images/repairingImg4.png " class="w-75" alt="">
+                    </div>
+                </div>
+                <div class="row service3">
+                    <div class="col-xl-6">
+                        <img src="images/repairingImg2.jpg" class="w-75" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Filter Replacement
+                        </h3>
+                        <p>
+                            Filters in water purifiers need periodic replacement to maintain efficiency. Service providers offer filter replacement services based on manufacturer guidelines or as per the specific needs of the purifier. 
+                            This helps in preserving water quality and extending the lifespan of the purifier.
+                        </p>
+                    </div>
+                </div>
+                <div class="row service4">
+                    <div class="col-xl-6">
+                        <img src="images/repairingImg.jpg" class="w-75" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Water Purifier Repair / Water Purifier Service
+                        </h3>
+                        <p>
+                            In the event that something breaks down or malfunctions, service providers provide quick repair services. They identify the problem, fix any damaged parts, and make sure the purifier is working properly again. In order to reduce downtime and guarantee uninterrupted access to clean water,
+                            quick response times are essential.
+                        </p>
+                    </div>
+                </div>
+                <div class="row service5">
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Pre-Filter-Change
+                        </h3>
+                        <p>
+                            Pre-Filter-Change of purifiers can be protection of filters in purifier
+                            This helps in preserving water quality and extending the lifespan of the purifier filters.
+                        </p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="images/Pre-Filter-ChangeImage.jpg" class="w-75" alt="">
+                    </div>
+                </div>
+                <div class="row service6">
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Water Quality Testing
+                        </h3>
+                        <p>
+                            Some service providers also offer water quality testing services to assess the effectiveness of purifiers and the quality of water output. This helps homeowners understand 
+                            the performance of their purifiers and make informed decisions regarding maintenance and upgrades.
+                        </p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="images/tdsTestingImg" class="w-75" alt="">
+                    </div>
+                </div>
+                <div class="service7">
+                    <div class="col-xl-6 mt-5">
+                        <h3>
+                            Customer Support
+                        </h3>
+                        <p>
+                            Reputable service providers give consistent client support, including online resources and helplines, to answer questions, set up appointments, 
+                            and offer guidance on maintaining and operating purifiers.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttom" class="container-fluid section-padding bottomContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-sm-6">
+                        <img src="images/RLlogo.JPG" class="img-fluid logoImg" alt="">
+                        <p>RL purifier sales and service provide repair and service,
+                            sales of water purifiers</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="officeAddress">
+                            <h3>Head Office</h3>
+                            <p>#2-1-393, Opp. Fever Hospital Signals, OU Road, Nallakunta, Hyderabad,500044</p>
+                        </div>
+                        <div class="workingHours">
+                            <h3>Working Hours</h3>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <i class="bi bi-telephone"></i>
+                                    8074050609
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    waterPurifier24@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 bottomNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="sevices.html">Services</a></li>
+                            <li><a href="costumerReview.html">costumer Review</a></li>
+                            <li><a href="contactUs.htm">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="col p-2 footer">
+            <p class="text-center">© 2021 Company, Inc</p>
+        </footer>
+    </body>
+</html>

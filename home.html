@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RL Water Purifiers</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="product.js"></script>
+
+    </head>
+    <body>
+        <div id="top" class="container-fluid section-padding m-0 pt-1 topContainer">
+            <div class="container">
+                <div class="row pt-1 topContent">
+                    <div class="col-xl-4 col-sm-4 ps-5 contactNum">
+                        <i class="bi bi-telephone"></i>
+                        8074050609
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <i class="bi bi-envelope"></i>
+                        waterPurifier24@gmail.com
+                    </div>
+                    <div class="col-xl-4 col-sm-2 pe-5 d-flex justify-content-xl-end ">
+                        <div class="whatsappDiv">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mainContainer">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.JPG" alt="" class="logoImg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutUs.html">aboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="services.html">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="custmerReview.html">customer Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contactUs.htm">contact</a>
+                        </li>
+                        <button class="nav-item  btn btn-primary login">
+                            <a onclick="displayLoginDialogue()">Login</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active button1"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2" class="button2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="button3"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carouselContainer">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/kentPurifiersResized.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption carousel1Text">
+                            <h2>Worlds Advanced Purifing Techonologies</h2>
+                            <H5>(RO+UF+UV+TDS+MINERAL)</H5>
+                            <P>BEST RL PURIFIER SERVICE</P>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/homePurifier2" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/homePurifier3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid loginForm">
+            <div class="d-flex justify-content-center">
+                <div class="LoginContainer">
+                    <div class="text-center loginHeading">
+                        <strong>Login</strong>
+                    </div>
+                    <div class="d-flex justify-content-center formDiv">
+                        <form>
+                            <div>
+                                <input type="email" class="form-control" onkeypress="email(event)" placeholder="enter email"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div>
+                                <input type="password" class="form-control" placeholder="Password" onkeypress="password(event)"
+                                    onkeyup="validatekeyup(event)" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group validationlist">
+                                <div id="lenValidation" class="validate1">
+                                    <span id="showicon1"></span>
+                                    <span id="showicon2"></span>
+                                    Password should have 10 char
+                                </div>
+                                <div id="firstCharValidation" class="validate2">
+                                    <span id="showIconFirstChar1"></span>
+                                    <span id="showIconFirstChar2"></span>
+                                    Password should allways start with Uppercase char
+                                </div>
+                                <div class="validate3">
+                                    <span id="showIconOfDigits1"></span>
+                                    <span id="showIconOfDigits2"></span>
+                                    Password should have min one digit and max of 2 digits
+                                </div>
+                                <div class="validate4">
+                                    <span id="showIconOfSpecialSyb1"></span>
+                                    <span id="showIconOfSpecialSyb2"></span>
+                                    Should have one special symbol #, $, &, @
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" onclick="hideCheckContent()" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+        
+                            <div class="ipEmailError">
+                                Please enter Email
+                            </div>
+                            <div class="inputErrors">
+                                Please enter valid input
+                            </div>
+                            <div class="ipPasswordError">
+                                Please enter Password
+                            </div>
+                            <div class="checkbox">
+                                Please click checkbox
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="logmeErrors()" id="logme">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="container-fluid products section-padding">
+            <div class="container d-flex justify-content-center">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 m-4 g-4">
+                    <div class=" col-xl-3">
+                        <div class="card">
+                            <img src="images/kentUltraWater4" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro1()">
+                                <h6>Wall Mountable UV + UF + Detachable Tank Flow Rate 60L/hr.</h6>
+                                <p class="card-text">₹8,999.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentUltraWater1" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro2()">
+                                <h6>Wall Mountable
+                                    UV + UF
+                                    Flow Rate 60L/hr.</h6>
+                                <p class="card-text">₹8,099.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentRo.png" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro3()">
+                                <h6>Wall Mountable RO + UF + TDS Control + UV In-tank +Alkaline Flow Rate 20L/hr.</h6>
+                                <p class="card-text">₹18,999.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentUltraWater2" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro4()">
+                                <h6>Wall Mountable UV Flow Rate 60L/hr.</h6>
+                                <p class="card-text">₹5,774.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentUltraWater3" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro5()">
+                                <h6>Wall Mountable TDS Control + UV In-tank +Alkaline Flow Rate 20L/hr.*</h6>
+                                <p class="card-text">₹6,999.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentRo.png" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro6()">
+                                <h6>Wall Mountable UV + UF + Detachable Tank Flow Rate 60L/hr.</h6>
+                                <p class="card-text">₹18,999.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentRo.png" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro3()">
+                                <h6>Wall Mountable RO + UF + TDS Control + UV In-tank +Alkaline Flow Rate 20L/hr.</h6>
+                                <p class="card-text">₹18,999.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                            <img src="images/kentUltraWater1" class="card-img-top" alt="...">
+                            <div class="card-body cardDescription" onclick="displayPro2()">
+                                <h6>Wall Mountable
+                                    UV + UF
+                                    Flow Rate 60L/hr.</h6>
+                                <p class="card-text">₹8,099.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div id="products2" class="container-fluid products2 section-padding">
+            <div class="container d-flex justify-content-center">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
+                    <div class="col col-xl-3">
+                      <div class="card">
+                        <img src="images/aquaPurifier9" class="card-img-top" alt="...">
+                        <div class="card-body cardDescription" onclick="displayPro7()">
+                          <h6 class="card-title">AQUA D PURE Copper+Alkaline RO Water Purifier 12L RO+UV+UF Copper + Bio-Alkaline</h6>
+                          <p class="card-text">₹4,899.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-xl-3">
+                      <div class="card">
+                        <img src="images/aquaPurifier2" class="card-img-top" alt="...">
+                        <div class="card-body cardDescription" onclick="displayPro8()">
+                          <h6 class="card-title">AQUA D PURE RO Water Purifier with Bio Zinc Copper Alkaline with UV, UF and TDS</h6>
+                          <p class="card-text">₹5,099.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-xl-3">
+                      <div class="card">
+                        <img src="images/aquaPurifier3" class="card-img-top" alt="...">
+                        <div class="card-body cardDescription" onclick="displayPro9()">
+                          <h6 class="card-title">AQUA D PURE Copper + Alkaline RO Water Purifier 12L RO+UV+UF Copper+Bio-Alkaline</h6>
+                          <p class="card-text">₹4,899.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-xl-3">
+                      <div class="card">
+                        <img src="images/aquaPurifier4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body cardDescription" onclick="displayPro10()">
+                          <h6 class="card-title">AQUA D PURE Copper RO Water Purifier with UV, UF and TDS Controller | 12Liter |</h6>
+                          <p class="card-text">₹4,899.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-xl-3">
+                        <div class="card">
+                          <img src="images/aquaPurifier10.jpg" class="card-img-top" alt="...">
+                          <div class="card-body cardDescription" onclick="displayPro11()">
+                            <h6 class="card-title">AQUA D PURE Copper+Alkaline RO Water Purifier 12L RO+UV+UF Copper + Bio-Alkaline</h6>
+                            <p class="card-text">₹4,999.00</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3">
+                    <div class="card">
+                        <img src="images/aquaPurifier5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body cardDescription" onclick="displayPro12()">
+                          <h6 class="card-title">AQUA D PURE Copper + Mineral RO+UV+UF 10 to 12 Liter RO + UV + TDS ADJUSTER</h6>
+                        <p class="card-text">₹4,899.00</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttom" class="container-fluid section-padding bottomContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-sm-6">
+                        <img src="images/RLlogo.JPG" class="img-fluid logoImg" alt="">
+                        <p>RL purifier sales and service provide repair and service,
+                            sales of water purifiers</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="officeAddress">
+                            <h3>Head Office</h3>
+                            <p>#2-1-393, Opp. Fever Hospital Signals, OU Road, Nallakunta, Hyderabad,500044</p>
+                        </div>
+                        <div class="workingHours">
+                            <h3>Working Hours</h3>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <i class="bi bi-telephone"></i>
+                                    8074050609
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    waterPurifier24@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 bottomNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="sevices.html">Services</a></li>
+                            <li><a href="costumerReview.html">costumer Review</a></li>
+                            <li><a href="contactUs.htm">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="col p-2 footer">
+            <p class="text-center">© 2021 Company, Inc</p>
+        </footer>
+    </body>
+</html>

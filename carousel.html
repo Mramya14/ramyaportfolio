@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RL Water Purifiers</title>
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="app2.css">
+        <script src="app.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="product.js"></script>
+
+    </head>
+    <body>
+        <div id="top" class="container-fluid section-padding m-0 p-0 topContainer">
+            <div class="container">
+                <div class="row pt-1 topContent">
+                    <div class="col-xl-4 col-sm-4 ps-5 contactNum">
+                        <i class="bi bi-telephone"></i>
+                        8074050609
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <i class="bi bi-envelope"></i>
+                        waterPurifier24@gmail.com
+                    </div>
+                    <div class="col-xl-4 col-sm-2 pe-5 d-flex justify-content-xl-end ">
+                        <div class="whatsappDiv">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mainContainer">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.JPG" alt="" class="logoImg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutUs.html">aboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="services.html">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="custmerReview.html">customer Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contactUs.htm">contact</a>
+                        </li>
+                        <button class="nav-item  btn btn-primary login">
+                            <a onclick="displayLoginDialogue()">Login</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid mt-5 mb-5 p-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-4 col-lg-6 mt-5" >
+                    <div class="row">
+                        <h2 class="customerHeading">Customer reviews</h2>
+                        <i class="bi bi-star-fill starBlackBig"><span class="starRating">4.89</span></i>
+                        <p>178K reviews</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row text-end">
+                                <i class="bi bi-star-fill mt-1 starBlack"><span>5 </span></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-sm-8 col-lg-8 col-md-8">
+                            <div class="gray">
+                                <div class="black1"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row">177K</div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row text-end">
+                                <i class="bi bi-star-fill mt-1 starBlack"><span>4</span></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-sm-8 col-lg-8 col-md-8">
+                            <div class="gray">
+                                <div class="black2"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row">145K</div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row text-end">
+                                <i class="bi bi-star-fill mt-1 starBlack"><span>3</span></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-sm-8 col-lg-8 col-md-8">
+                            <div class="gray">
+                                <div class="black3"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row">135K</div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row text-end">
+                                <i class="bi bi-star-fill mt-1 starBlack"><span>2</span></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-sm-8 col-lg-8 col-md-8">
+                            <div class="gray">
+                                <div class="black4"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row">127K</div>
+                        </div>
+                    </div>
+                    <div class="row mb-5 d-flex justify-content-center">
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row text-end">
+                                <i class="bi bi-star-fill mt-1 starBlack"><span>1</span></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-sm-8 col-lg-8 col-md-8">
+                            <div class="gray">
+                                <div class="black5"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-2 col-lg-2 col-md-2">
+                            <div class="row">156K</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="row m-3 p-2 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 mt-1 reviewerDetails">
+                                <p class="name">Thasvika</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2  col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-2 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person mt-"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 mt-1 reviewerDetails">
+                                <p class="name">Thasvika</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2  col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-2 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person mt-"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 mt-1 reviewerDetails">
+                                <p class="name">chitti</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2  col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-2 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person mt-"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 mt-1 reviewerDetails">
+                                <p class="name">thanmayi</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2  col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-2 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person mt-"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 mt-1 reviewerDetails">
+                                <p class="name">sreya</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2  col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 reviewRight">
+                    <div class="row m-3 p-4 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 reviewerDetails">
+                                <p class="name">Ramya</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2 col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-4 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 reviewerDetails">
+                                <p class="name">naveen</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2 col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-4 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 reviewerDetails">
+                                <p class="name">prince</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2 col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3 p-4 humanDetails">
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-2 p-2">
+                                <div class="humaniconbg mt-1">
+                                    <i class="bi bi-person"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-sm-8 reviewerDetails">
+                                <p class="name">rosey</p>
+                                <p class="address">July 2024 • Hyderabad, Telangana 500031, India</p>
+                            </div>
+                            <div class="col-xl-2 col-sm-2 d-flex justify-content-center yellowStar">
+                                <i class="bi bi-star-fill starYellow"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="reviewText">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <p>Good job done very professional and on time work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttom" class="container-fluid section-padding bottomContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-sm-6">
+                        <img src="images/RLlogo.JPG" class="img-fluid logoImg" alt="">
+                        <p>RL purifier sales and service provide repair and service,
+                            sales of water purifiers</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="officeAddress">
+                            <h3>Head Office</h3>
+                            <p>#2-1-393, Opp. Fever Hospital Signals, OU Road, Nallakunta, Hyderabad,500044</p>
+                        </div>
+                        <div class="workingHours">
+                            <h3>Working Hours</h3>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <i class="bi bi-telephone"></i>
+                                    8074050609
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    waterPurifier24@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 bottomNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="sevices.html">Services</a></li>
+                            <li><a href="costumerReview.html">costumer Review</a></li>
+                            <li><a href="contactUs.htm">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="col p-2 footer">
+            <p class="text-center">© 2021 Company, Inc</p>
+        </footer>
+    </body>
+</html>

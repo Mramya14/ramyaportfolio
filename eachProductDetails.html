@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RL Water Purifiers</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="product.js"></script>
+
+    </head>
+    <body>    
+        <div class="container-fluid topContainer position-sticky top-0 z-index-1">
+            <div class="row topContent">
+                <div class="col-xl-4 mt-2">
+                    <i class="bi bi-telephone"></i>
+                        8074050609
+                </div>
+                <div class="col-xl-4 mt-2">
+                    <i class="bi bi-envelope"></i>
+                    waterPurifier24@gmail.com
+                </div>
+                <div class="col-xl-4 mt-2 d-flex justify-content-xl-end">
+                    <div class="whatsAppDiv">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mainContainer">
+            <nav class="navbar navbar-expand-sm d-flex m-0 p-0">
+                <div class="container-fluid p-1 d-flex">
+                    <!-- Links -->
+                    <div class="logo">
+                        <img class="w-50 ml-3 logoImg" src="images/RLlogo.JPG" />
+                    </div>
+                    <ul class="navbar-nav d-flex justify-content-xl-end navul">
+                        <li class="nav-item m-1 p-2">
+                            <a class="nav-link" href="home.html" target="_blank"">Home</a>
+                            </li>
+                            <li class="nav-item m-1 p-2">
+                                <a class="nav-link" href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item m-1 p-2">
+                            <a class="nav-link" href="sevices.html" target="_blank">Service</a>
+                        </li>
+                        <li class="nav-item m-1 p-2">
+                            <a class="nav-link" href="custmerReview.html" target="_blank"">Customer Rating</a>
+                            </li>
+                            <li class=" nav-item m-1 p-2">
+                                <a class="nav-link" href="contactUs.htm" target="_blank">ContactUs</a>
+                        </li>
+                        <button class="nav-item m-2 btn btn-primary login">
+                            <a onclick="displayLoginDialogue()">Login</a>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="product1">
+                <div class="row mt-5 productContainer1">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/kentUltraWater4" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6>Wall Mountable UV + UF + Detachable Tank Flow Rate 60L/hr.</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹10,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹8,999.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product2"> 
+                <div class="row mt-5 productContainer2">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/kentUltraWater1" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6>Wall Mountable
+                                UV + UF
+                                Flow Rate 60L/hr.</h6>
+                            </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹9,999.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹8,099.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="hideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product3">
+                <div class="row mt-5 productContainer3">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/kentRo.png" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6>Wall Mountable RO + UF + TDS Control + UV In-tank +Alkaline Flow Rate 20L/hr.*</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹22,000.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹18,999.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product4">
+                <div class="row mt-5 productContainer4">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/kentUltraWater2" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6>Wall Mountable UV Flow Rate 60L/hr.</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹5,774.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹9,000.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product5">
+                <div class="row mt-5 productContainer5">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/kentUltraWater3" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6>Wall Mountable TDS Control + UV In-tank +Alkaline Flow Rate 20L/hr.*</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹8,000.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹6,999.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product6">
+                <div class="row mt-5 productContainer6">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/kentRo.png" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6>Wall Mountable RO + UF + TDS Control + UV In-tank +Alkaline Flow Rate 20L/hr.*</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹22,000.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹18,999.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product7">
+                <div class="row mt-5 productContainer7">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/aquaPurifier9" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6 class="card-title">AQUA D PURE Copper+Alkaline RO Water Purifier 12L RO+UV+UF Copper + Bio-Alkaline</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹14,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹4,899.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product8">
+                <div class="row mt-5 productContainer8">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/aquaPurifier2" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6 class="card-title">AQUA D PURE RO Water Purifier with Bio Zinc Copper Alkaline with UV, UF and TDS</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹14,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹5,099.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product9">
+                <div class="row mt-5 productContainer9">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/aquaPurifier3" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6 class="card-title">AQUA D PURE Copper + Alkaline RO Water Purifier 12L RO+UV+UF Copper+Bio-Alkaline</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹14,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹4,899.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product10">
+                <div class="row mt-5 productContainer10">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/aquaPurifier4" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6 class="card-title">AQUA D PURE Copper RO Water Purifier with UV, UF and TDS Controller | 12Liter |</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹14,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹4,899.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product11">
+                <div class="row mt-5 productContainer11">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/aquaPurifier10.jpg" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6 class="card-title">AQUA D PURE Copper+Alkaline RO Water Purifier 12L RO+UV+UF Copper + Bio-Alkaline</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹14,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹4,999.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="product12">
+                <div class="row mt-5 productContainer12">
+                    <div class="col-xl-4 justify-content-center imageContainer">
+                        <img src="images/aquaPurifier5.jpg" alt="">
+                    </div>
+                    <div class="col-xl-6 mt-5 p-5 imageDetials" >
+                        <div class="row">
+                            <h6 class="card-title">AQUA D PURE Copper + Mineral RO+UV+UF 10 to 12 Liter RO + UV + TDS ADJUSTER</h6>
+                        </div>
+                        <div class="row d-flex mt-3">
+                            <div class="col-xl-2">
+                                <p class="card-text actualPrice">₹14,899.00</p>
+                            </div>
+                            <div class="col-xl-2">
+                                <p class="card-text">₹4,899.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-primary w-50 mt-3 ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  mt-5 p-4 closePro">
+                        <i class="bi bi-x" onclick="HideProducts()"></i> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomContainer">
+            <div class="container mt-3 p-3 w-75 bottomContainer2">
+                <div class="row mt-5 mb-2">
+                    <div class="col-xl-4 p-4">
+                        <img src="images/RLlogo.JPG" alt="">
+                        <p>RL purifier sales and service provide repair and service,
+                             sales of water purifiers</p>
+                    </div>
+                    <div class="col-xl-4">
+                        <div>
+                            <h3>
+                                Head Office
+                            </h3>
+                            <p>
+                                #2-1-393, Opp. Fever Hospital Signals,  OU Road, Nallakunta, Hyderabad,500044
+                            </p>
+                        </div>
+                        <div>
+                            <h3>
+                                Working Hours
+                            </h3>
+                        </div>
+                        <div class="col-xl-4 mt-2">
+                            <i class="bi bi-telephone"></i>
+                                8074050609
+                        </div>
+                        <div class="col-xl-4 mt-2">
+                            <i class="bi bi-envelope"></i>
+                            waterPurifier24@gmail.com
+                        </div>
+                    </div>
+                    <div class="col-xl-4 bottomNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="sevices.html">Services</a></li>
+                            <li><a href="costumerReview.html">costumer Review</a></li>
+                            <li><a href="contactUs.htm">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <footer class="py-1 mx-4">
+              <p class="text-center">© 2021 Company, Inc</p>
+            </footer>
+        </div>
+    </body>
+</html>

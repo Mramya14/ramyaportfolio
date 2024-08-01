@@ -1,0 +1,564 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+/* <!-- Top Header--> */
+
+
+.section-padding{
+    padding: 30px 0;
+}
+.topContainer{
+    background-image: linear-gradient(to right, rgb(234, 83, 86) , rgb(55,74,94));
+    height: 40px;
+    z-index: 2;
+}
+.topContent{
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+
+/* -----------navbar---------- */
+
+.mainContainer{
+    background-color: rgba(54, 53, 119, 0.539);
+}
+
+li a{
+    color: blue;
+}
+.navbar-nav a{
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-item:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* -------------carousel---------- */
+
+
+.carousel1Text{
+    color: white;
+}
+.carousel-item{
+    min-height: 300px;
+}
+.carousel-caption h5{
+    font-size: 45;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+.carousel-caption h2{
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.502);
+    z-index: 1;
+}
+
+/* <!-- Products --> */
+
+
+.card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.10);
+    padding: 10px;
+    min-height: 415px;
+}
+.cardDescription{
+    background-color: gainsboro;
+}
+.cardDescription:hover{
+    opacity: 0.5;
+}
+
+/* -------------media queries------------------ */
+
+
+@media screen and (max-width: 576px){
+    .topContainer{
+        height: 80px;
+    }
+    .contactNum{
+        margin-left: -35px;
+    }
+    .logoImg{
+        width: 150px;
+        height: 40px;
+    }
+    .carousel-item img{
+        height: 180px;
+    }
+    .carousel-inner::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        top: 0;
+        left: 0;
+    }
+    .carousel-caption{
+        margin-bottom: 125px;
+        z-index: 2;
+    }
+    .carousel-caption h5{
+        font-size: 10px;
+    }
+    .carousel-caption h2{
+        font-size: 15px;
+    }
+    .carousel-caption p{
+        font-size: 8px;
+        line-height: normal;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        margin-top: -130px;
+    }
+    .button1, .button2, .button3{
+        margin-top: -130px;
+    }
+    .products{
+        margin-top: -150px;
+    }
+    .loginFrom::before{
+        height: 54%;
+    }
+    .mapcontiner iframe{
+        width: 350px;
+        height: 300px;
+        margin-top: -50px;
+    }
+    .card{
+        width: 250px;
+        min-height: 250px;
+        margin: auto;
+    }
+    .servicePageImg img{
+        margin-top: 10px;
+        margin-left: 35px;
+    width: 200px;
+    height: auto;
+    }
+    .servicePageDetails p{
+        margin-top: 55px;
+        margin-right: 50px;
+        font-size: 18px;
+    }
+    .services img{
+        height: 200px;
+    }
+    .services p{
+        font-size: 18px;
+    }
+    .services h2{
+        font-size: 20px;
+    }
+    .service{
+        margin-top: 10px;
+    }
+    .service1, .service2, .service3, .service4, .service5, .service6, .service7{
+        margin-bottom: 50px;
+        padding-left: 20px;
+    }
+    .service7{
+        padding-bottom: 20px;
+    }
+    .contactContainer{
+        width: 300px;
+        min-height: 250;
+    }
+    .reviewContainer{
+        margin-top: -80px;
+    }
+}
+@media screen and (min-width: 576px){
+    .carousel-caption{
+        margin-bottom: 70px;
+        z-index: 2;
+    }
+    .logoImg{
+        width: 150px;
+        height: 40px;
+    }
+    .topContainer{
+        margin-top: 20px;
+    }
+    .servicePageDetails p{
+        margin-top: 75px;
+        margin-right: 50px;
+        font-size: 18px;
+    }
+    .services img{
+        height: 380px;
+    }
+    .service1, .service2, .service3, .service4, .service5, .service6, .service7{
+        padding-bottom: 80px;
+    }
+    .service{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .loginFrom::before{
+        height: 54%;
+    }
+    .logoImg{
+        width: 120px;
+        height: 50px;
+    }
+    .card{
+        min-height: 360px;
+    }
+    .carousel-item img{
+        height: 315px;
+    }
+    .servicePageImg img{
+        margin-top: 50px;
+        margin-left: 75px;
+    
+    }
+    
+    
+}
+@media screen and (min-width: 992px){
+    .loginFrom::before{
+        height: 54%;
+    }
+    .humanDetails{
+        padding: 100px;
+    }
+    .card{
+        min-height: 380px;
+    }
+    .carousel-item img{
+        height: 415px;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    .loginFrom::before{
+        height: 54%;
+    }
+}
+/* <!-- login --> */
+
+.loginForm{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)),url(images/loginbg2);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.LoginContainer{
+    padding: 5px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 500px;
+    min-height: 300px;
+    border: 1px solid rgba(23, 30, 243, 0.484);
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    z-index: 2;
+}
+.loginHeading{
+    font-size: 25px;
+    color: white;
+}
+.formDiv{
+    margin-top: 20px;
+}
+form div{
+    margin-top: 8px;
+}
+
+.validationlist{
+    display: none
+}
+#lenValidation{
+    display: block;
+}
+.validate1, .validate2, .validate3, .validate4{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.inputErrors, .ipEmailError, .ipPasswordError, .checkbox, .displayMe{
+    color: rgba(255, 0, 0, 0.858);
+    display: none;
+    margin: 5px;
+}
+.closebtn{
+    font-size: 30px;
+}
+
+
+/* <!-- AboutUs--> */
+
+.aboutUsContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.aboutBody{
+    margin-top: 70px;
+}
+.aboutDescription{
+    font-size: 18px;
+}                   
+
+
+
+/* <!--- service --> */
+
+
+.serviceMainContainer{
+    background-color: rgba(123, 165, 244, 0.701);
+    padding-bottom: 50px;
+}
+
+
+.serviceContainer{
+    background-color: rgba(255, 230, 230, 0.728);
+    margin-top: 25px;
+}
+
+
+/* <!-- contactUs --> */
+
+.contactForm{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(253, 250, 250, 0.667), rgba(248, 245, 245, 0.621)),url('images/contact2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.contactDetails input{
+    font-size:17px;
+    padding: 10px 5px 10px 50px;
+}
+.contactDetails i{
+    position: relative;     
+    top: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(194,194,194);
+}
+.contactHeading{
+    margin-top: 10px;
+    font-size: 35px;
+    color: white;
+}
+.contactContainer{
+    padding-bottom: 35px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 500px;
+    min-height: 300px;
+    border: 1px solid rgba(23, 30, 243, 0.484);
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    z-index: 2;
+}
+#text{
+    border: rgb(194,194,194);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: rgb(194,194,194);
+}
+#send{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgba(23, 30, 243, 0.484);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.mapcontiner{   
+    margin-top: 70px;
+}
+.ipErrors{
+    margin-top: 10px;
+    color: red;
+    display: none;
+}
+
+/* <!--- customer reviews > */
+
+
+ .starBlackBig{
+    font-size: 20px;
+}
+.starRating{
+    margin-top: -10px;  
+    font-size: 30px;
+}
+.starBlack{
+    font-size: 10px;
+}
+.black1, .black2, .black3, .black4, .black5{
+    height: 8px;
+    background-color: rgb(15, 14, 14);
+    z-index: 2;
+    margin-top: 5px;
+}
+.black1{
+    width: 300px;
+}
+.black2{
+    width: 200px;
+}
+.black3{
+    width: 150px;
+}
+.black4{
+    width: 100px;
+}
+.black5{
+    width: 50px;
+}
+.gray{
+    width: 300px;
+    height: 8px;
+    background-color: gainsboro;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.humanDetails{
+    border: 1px solid rgba(211, 211, 211, 0.107);
+    border-radius: 5px;
+}
+.humaniconbg{
+    background-color: gainsboro;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.bi-person{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.starYellow{
+    font-size: 15px;
+    color: gold;
+}
+.name, .reviewText{
+    color: rgb(15, 15, 15);
+    line-height: 20px;
+}
+.reviewText{
+    font-size: 12px;
+    margin-top: -20px;
+}
+.address{
+    color: rgb(117, 117, 117);
+    font-size: 13px ;
+    line-height: 20px;
+    margin-top: -12px;
+
+} 
+
+/* ---------buttom-------------- */
+
+.bottomContainer{
+    background-color: rgba(34, 33, 74, 0.71);
+    font-size: 18px;
+    color: white;
+}
+.bottomNav a{
+    text-decoration: none;
+    color: white;
+}
+.bottomNav ul{
+    list-style: none;
+}
+
+/* <!-- Footer--> */
+.footer{
+background-color: gainsboro;
+}
+
+
+
+
+/* <!--- image Container --> */
+
+
+.product1, .product2, .product3, 
+.product4, .product5, .product6, 
+.product7, .product8, .product9,
+.product10, .product11, .product12 {
+    display: none;
+}
+.product1, .product2, .product3{
+    position: absolute;
+    top: 700px;
+    left: 300px;
+}
+.product4, .product5, .product6{
+    position: absolute;
+    top: 1200px;
+    left: 300px;
+} 
+.product7, .product8, .product9{
+    position: absolute;
+    top: 1700px;
+    left: 300px;
+    z-index: 1;
+}
+.product10, .product11, .product12 {
+    position: absolute;
+    top: 2200px;
+    left: 300px;
+    z-index: 2;
+}
+.closePro{
+    font-size: 40px;
+    cursor: pointer;
+}
+.imageContainer img{
+    margin-top: 50px;
+    width: 250px;
+    height: 300px;
+}
+.imageDetials{
+    margin-top: 50px;
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product1, .product2, .product3, .product4,
+.product5, .product6, .product7, .product8,
+.product9, .product10, .product11, .product12{
+    background-color: rgb(164, 163, 163);
+    min-height: 500px;
+}
+.innerProductContainer{
+    border: 1px solid salmon;
+    border-radius: 20px;
+}
+.actualPrice{
+    text-decoration: line-through;
+}
